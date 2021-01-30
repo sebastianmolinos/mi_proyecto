@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.formulario{
+    width: 100%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 5px 0;
+    background-color: #000;
+}
+.contenedor .form .form-header .form-title{
+    font-weight: normal;
+    font-family: sans-serif;
+
+}
+    .form{
+        background: rgba(44, 35, 35, 0.6);
+        width: 90%;
+        max-width: 650px;
+        margin: auto;
+        padding: 10px 30px;
+        margin-top: 20px;
+        border-radius: 3px;
+        .form-label{
+            display: block;
+            color: rgb(124, 169, 196);
+            font-size: 16px;
+            font-family: roboto;
+            position: relative;  
+        }
+        .form-input, .form-textarea{
+            background: rgba(0, 0, 0, .7);
+            border: none;
+            outline: none;
+            border-bottom: 2px solid rgb(124, 169, 196);
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 2px;
+            font-size: 14px;
+            color: rgb(124, 169, 196);
+            font-family: roboto;
+        } 
+        .form-textarea{
+            resize: vertical;
+            max-height: 150px;
+            min-height: 50px;
+        }
+        .btn-submit{
+            width: 100%;
+            font-family: roboto;
+            outline: none;
+            background: rgb(79, 143, 184);
+            font-size: 16px;
+            border: none;
+            color: rgb(124, 169, 196);
+            padding: 15px 0;
+            cursor: pointer;
+        }
+    }
