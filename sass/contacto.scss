@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+}
+
+.formulario{
+    width: 100%;
+    margin: 1rem auto;
+    grid-gap: 10px;
+    padding: 5px 0;
+    background-color: #000;
+}
+.contenedor .form .form-header .form-title{
+    font-weight: normal;
+    font-family: sans-serif;
+
+}
+.form{
+    background: rgba(44, 35, 35, 0.6);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 50px 30px;
+    margin-top: 20px;
+    border-radius: 3px;
+    .form-header h1{
+        color: rgb(231, 159, 76);
+    }
+    .form-label{
+        display: block;
+        color: rgb(187, 130, 77);
+        font-size: 16px;
+        font-family: roboto;
+        position: relative;  
+    }
+    .form-input, .form-textarea{
+        background: rgba(0, 0, 0, .7);
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgb(187, 130, 77);
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border-radius: 2px;
+        font-size: 14px;
+        color: rgb(124, 169, 196);
+        font-family: roboto;
+    } 
+    .form-textarea{
+        resize: vertical;
+        max-height: 150px;
+        min-height: 50px;
+    }
+    .btn-submit{
+        width: 100%;
+        font-family: roboto;
+        outline: none;
+        background: rgb(238, 153, 56);
+        font-size: 16px;
+        border: none;
+        color: rgb(219, 223, 226);
+        padding: 15px 0;
+        cursor: pointer;
+    }
+}
+.end{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(49, 49, 49);
+    color: whitesmoke;
+    padding: 10px 15px;
+    align-items: center;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+.social-btn a{
+    margin: 0 5px;
+    i{
+        color: white;
+        padding: 8px;
+        width: 16px;
+        text-align: center;
+    }
+    i:hover{
+        color: rgb(226, 23, 23);
+    }
+}
+@media screen and (max-width:800px){
+    footer{
+        flex-direction: column;
+    }
+    .end{
+        flex-direction: column;
+    }
+    .section{
+        padding: 10px 0;
+        margin-bottom: 20px;
+    }
+}
